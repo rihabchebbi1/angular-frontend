@@ -1,0 +1,38 @@
+<div *ngIf="selectedProduit">
+    <h2>{{ selectedProduit?.id ? 'Modifier' : 'Ajouter' }} un Produit</h2>
+    <form (ngSubmit)="saveProduit()">
+      <div>
+        <label for="codeProd">Code:</label>
+        <input id="codeProd" [(ngModel)]="selectedProduit.codeProd" name="codeProd" required />
+      </div>
+      <div>
+        <label for="libelle">Libellé:</label>
+        <input id="libelle" [(ngModel)]="selectedProduit.libelle" name="libelle" required />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="description" [(ngModel)]="selectedProduit.description" name="description"></textarea>
+      </div>
+      <div>
+        <label for="prixTTC">Prix TTC:</label>
+        <input id="prixTTC" type="number" [(ngModel)]="selectedProduit.prixTTC" name="prixTTC" required />
+      </div>
+      <div>
+        <label for="prixHT">Prix HT:</label>
+        <input id="prixHT" type="number" [(ngModel)]="selectedProduit.prixHT" name="prixHT" required />
+      </div>
+      <div>
+        <label for="tva">TVA:</label>
+        <input id="tva" type="number" [(ngModel)]="selectedProduit.tva" name="tva" />
+      </div>
+      <div>
+        <label for="marque">Marque:</label>
+        <select id="marque" [(ngModel)]="selectedProduit.marque" name="marque">
+          <option *ngFor="let marque of marques" [value]="marque.id">{{ marque.nom }}</option>
+        </select>
+      </div>
+      <button type="submit">{{ selectedProduit?.id ? 'Modifier' : 'Ajouter' }}</button>
+      <button type="button" (click)="cancel()">Annuler</button>
+    </form>
+  </div>
+  

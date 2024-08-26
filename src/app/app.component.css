@@ -1,0 +1,67 @@
+.navbar-red {
+    background-color: #000000; /* Noir pour le fond de la navbar */
+  }
+  
+  .bg-red {
+    background-color: #000000 !important; /* Noir forcé pour la couleur de fond */
+  }
+  
+  .navbar-brand .logo {
+    max-height: 50px; /* Ajustez la hauteur maximale du logo */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Aligne les éléments à droite */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 20px; /* Espace entre les éléments du menu */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #FFFFFF; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #CCCCCC; /* Gris clair au survol */
+  }
+  
+  .language-selector-wrapper {
+    margin-left: 20px; /* Espace entre le sélecteur de langue et les autres éléments */
+  }
+  
+  .language-toggle {
+    color: #FFFFFF; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+    display: flex;
+    align-items: center; /* Aligne verticalement le texte et les icônes */
+  }
+  
+  .language-toggle .fa-angle-down {
+    margin-left: 5px; /* Espace entre le texte et l'icône */
+  }
+  
+  .dropdown-menu {
+    min-width: 160px; /* Largeur minimale pour le menu déroulant */
+    padding: 10px 0; /* Espacement du contenu */
+    background-color: #ffffff; /* Fond blanc pour le menu */
+    border: 1px solid #ddd; /* Bordure légère */
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center; /* Aligne verticalement les éléments */
+    padding: 5px 15px; /* Espacement des éléments */
+    font-size: 14px; /* Taille de police */
+    color: #000; /* Texte noir */
+  }
+  
+  .dropdown-item img {
+    margin-right: 10px; /* Espace entre l'image et le texte */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa; /* Fond léger au survol */
+  }
+  
