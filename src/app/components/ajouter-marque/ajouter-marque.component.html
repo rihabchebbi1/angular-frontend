@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Add New Marque</h2>
+    <form [formGroup]="marqueForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="libelle">Libelle:</label>
+        <input id="libelle" formControlName="libelle" type="text" />
+        <div *ngIf="marqueForm.get('libelle')?.invalid && marqueForm.get('libelle')?.touched">
+          Libelle is required.
+        </div>
+      </div>
+  
+      <div>
+        <label for="image">Image URL:</label>
+        <input id="image" formControlName="image" type="text" />
+      </div>
+  
+      <button type="submit" [disabled]="marqueForm.invalid">Add Marque</button>
+    </form>
+  </div>
+  

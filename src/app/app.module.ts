@@ -3,21 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
-import { ProduitComponent } from './produit/produit.component';
-import { FormsModule } from '@angular/forms'; // Ensure this import is present
-import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ProduitListComponent } from './components/produit-list/produit-list.component';
+import { ProduitDetailComponent } from './components/produit-detail/produit-detail.component';
+import { AjouterProduitComponent } from './components/ajouter-produit/ajouter-produit.component';
+import { AjouterMarqueComponent } from './components/ajouter-marque/ajouter-marque.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     SigninComponent,
-    ProduitComponent
+    ProduitListComponent,
+    ProduitDetailComponent,
+    AjouterProduitComponent,
+    AjouterMarqueComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule, // Ensure this is included
-    CommonModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

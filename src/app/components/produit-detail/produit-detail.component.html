@@ -1,0 +1,12 @@
+<div *ngIf="produit">
+    <h2>Détails du Produit</h2>
+    <div><strong>ID: </strong>{{ produit.id }}</div>
+    <div><strong>Code: </strong>{{ produit.codeProd }}</div>
+    <div><strong>Libelle: </strong>{{ produit.libelle }}</div>
+    <div><strong>Description: </strong>{{ produit.description }}</div>
+    <div><strong>Prix TTC: </strong>{{ produit.prixTTC | currency }}</div>
+    <div><strong>Prix HT: </strong>{{ produit.prixHT | currency }}</div>
+    <div><strong>TVA: </strong>{{ produit.tva }}%</div>
+    <div><strong>Marque ID: </strong>{{ produit.marqueId }}</div>
+  </div>
+  

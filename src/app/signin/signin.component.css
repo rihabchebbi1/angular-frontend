@@ -1,7 +1,9 @@
+/* Style global */
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif; /* Choix de la police pour une meilleure lisibilité */
 }
 
 .full-page-background {
@@ -11,21 +13,26 @@ body, html {
     background-size: cover; /* Couvre toute la surface */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    display: flex;
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
 }
 
 .container {
     max-width: 400px;
-    margin: 0 auto;
+    width: 100%; /* Assure que le conteneur ne dépasse pas l'écran */
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
-    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet d'élévation */
+    margin: 20px; /* Espace autour du conteneur */
 }
 
 h2 {
     text-align: center;
     color: #d0021b; /* Rouge Ooredoo */
+    margin-bottom: 20px; /* Espace sous le titre */
 }
 
 .form-group {
@@ -38,7 +45,7 @@ h2 {
 
     input {
         width: 100%;
-        padding: 8px;
+        padding: 10px;
         font-size: 16px;
         border: 1px solid #d0021b; /* Bordure rouge */
         border-radius: 4px;
@@ -63,6 +70,9 @@ button {
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -80,4 +90,5 @@ button {
 .btn-primary.disabled {
     background-color: #f9c0c4; /* Rouge pâle quand désactivé */
     border-color: #f9c0c4; /* Rouge pâle quand désactivé */
+    cursor: not-allowed; /* Curseur pour état désactivé */
 }

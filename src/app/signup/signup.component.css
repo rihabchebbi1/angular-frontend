@@ -1,83 +1,37 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .full-page-background {
-    height: 100%; /* S'assure que le conteneur couvre toute la page */
+    background: url('/assets/Ooredoo-Logo.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.8); /* Un fond légèrement transparent pour contraster avec l'image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
     width: 100%;
-    background-image: url('/assets/Ooredoo-Logo.png'); /* Image de fond */
-    background-size: cover; /* Couvre toute la surface */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-}
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
-    margin-top: 20px;
-}
-
-h2 {
-    text-align: center;
-    color: #d0021b; /* Rouge Ooredoo */
-}
-
-.form-group {
-    margin-bottom: 20px;
-
-    label {
-        font-weight: bold;
-        color: #d0021b; /* Rouge Ooredoo */
-    }
-
-    input {
-        width: 100%;
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #d0021b; /* Bordure rouge */
-        border-radius: 4px;
-        transition: border-color 0.15s ease-in-out;
-        background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
-    }
-
-    input:focus {
-        border-color: #f5001d; /* Rouge Ooredoo légèrement plus clair au focus */
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25); /* Rouge au focus */
-    }
-
-    .text-danger {
-        color: #f5001d; /* Rouge pour les messages d'erreur */
-        font-size: 14px;
-        margin-top: 4px;
-    }
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.btn-primary {
-    background-color: #d0021b; /* Rouge Ooredoo */
-    border-color: #d0021b; /* Rouge Ooredoo */
-    color: #fff; /* Texte en blanc */
-}
-
-.btn-primary:hover {
-    background-color: #b30015; /* Rouge plus foncé au survol */
-    border-color: #b30015; /* Rouge plus foncé au survol */
-}
-
-.btn-primary:disabled,
-.btn-primary.disabled {
-    background-color: #f9c0c4; /* Rouge pâle quand désactivé */
-    border-color: #f9c0c4; /* Rouge pâle quand désactivé */
-}
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .invalid-feedback {
+    display: block;
+    font-size: 0.875rem;
+    color: #dc3545;
+  }
+  
+  .btn-primary {
+    background-color: #d0021b;
+    border-color: #d0021b;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d0021b;
+    border-color: #d0021b;
+  }
+  

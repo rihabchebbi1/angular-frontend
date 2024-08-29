@@ -1,30 +1,41 @@
-<nav class="navbar navbar-expand navbar-red bg-red">
+<nav class="navbar navbar-expand-lg navbar-red bg-red">
   <div class="container">
     <a class="navbar-brand" href="https://www.ooredoo.tn/Personal/">
       <img class="logo img-fluid" src="/assets/ooredoo-logo.jpg" alt="Ooredoo logo">
     </a>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/signup">Register</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/signin">Login</a>
-      </li>
-    </ul>
-    <div class="language-selector-wrapper dropdown">
-      <a href="#" class="language-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span>Français</span>
-        <i class="fa fa-angle-down"></i>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-right">
-        <li>
-            <img src="/assets/1.jpg" alt="English" width="16" height="11"> English
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signup">S'inscrire</a>
         </li>
-        <li class="current">
-         
-            <img src="/assets/3.jpg" alt="Français" width="16" height="11"> Français
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signin">Se connecter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/produits">Produits</a>
         </li>
       </ul>
+      <div class="language-selector-wrapper dropdown ml-3 d-none d-md-block">
+        <a href="#" class="language-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span>Français</span>
+          <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a href="#" class="dropdown-item">
+              <img src="/assets/1.jpg" alt="English" width="16" height="11"> English
+            </a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item active">
+              <img src="/assets/3.jpg" alt="Français" width="16" height="11"> Français
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
